@@ -1,0 +1,69 @@
+#inicio {
+  background-image: url("../img/fondo-inicio.jpg");
+  background-color: #333;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center; 
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contenido */
+.content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Boton */
+.div-boton {
+  display: flex;
+  justify-content: center;
+}
+
+.boton-contacto {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: #ff4500;
+}
+
+.boton-contacto a {
+  color: #fff;
+  text-decoration: none;
+}

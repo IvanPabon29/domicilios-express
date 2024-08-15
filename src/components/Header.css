@@ -1,0 +1,49 @@
+/* Encabezado */
+header{
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+}
+
+/* Contenedor logo */
+.div-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  /* padding: 0 1rem;  */
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  img{
+    width: 60px;
+  }
+}
+.div-logo:hover{
+  color: #ff5733;
+  text-decoration: underline;
+}
+
+
+/* Navegacion */
+nav{
+  width: 75%;
+}
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.nav-menu a:hover{
+  color: #ff5733;
+  text-decoration: underline;
+}
