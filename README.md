@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Domicilios Express
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+**Domicilios Express** es una sitio web diseñada para facilitar la gestión de entregas rápidas en la ciudad de Ibagué, Tolima. La aplicación permite a los clientes solicitar la recogida y entrega de paquetes o pedidos de manera eficiente y segura. Nuestro enfoque es proporcionar un servicio confiable, utilizando vehículos, motocicletas, y bicicletas para satisfacer las necesidades de nuestros usuarios.
 
-In the project directory, you can run:
+## Interfaz
+![alt text](<Captura de pantalla 2024-08-19 141640.png>)
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Inicio**: Página de bienvenida con información general sobre los servicios ofrecidos.
+- **Servicios**: Detalles sobre los diferentes tipos de transporte y servicios de entrega disponibles.
+- **Domicilios**: Permite a los usuarios gestionar sus solicitudes de entrega.
+- **Nosotros**: Información sobre la empresa, su historia, equipo y valores corporativos.
+- **Contacto**: Información de contacto y un formulario para consultas, junto con un mapa de la ubicación de la empresa.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologías Utilizadas
 
-### `npm test`
+- **Frontend**: React.js, CSS
+- **Backend**: Node.js con Express (en desarrollo futuro)
+- **Base de Datos**: MySQL (en desarrollo futuro)
+- **Mapas**: Google Maps API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estructura del Proyecto
 
-### `npm run build`
+```bash
+├── public/
+│   ├── index.html
+├── src/
+│   ├── Components/
+│   │   ├── Inicio.js
+│   │   ├── Servicios.js
+│   │   ├── Domicilios.js
+│   │   ├── Nosotros.js
+│   │   ├── Contacto.js
+│   ├── Styles/
+│   │   ├── Inicio.css
+│   │   ├── Servicios.css
+│   │   ├── Domicilios.css
+│   │   ├── Nosotros.css
+│   │   ├── Contacto.css
+│   ├── img/
+│   │   ├── img-inicio.jpg
+│   │   ├── img-servicios.jpg
+│   │   ├── img-domicilios.jpg
+│   │   ├── img-nosotros.jpg
+│   │   ├── img-contacto.jpg
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   ├── index.css
+├── README.md
+├── package.json
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalación
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clona este repositorio: `git clone https://github.com/IvanPabon29/domicilios-express.git`
+2. Navega al directorio del proyecto: `cd domicilios-express`
+3. Instala las dependencias: `npm install`
+4. Inicia la aplicación: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribuciones
+¡Las contribuciones son bienvenidas! Si tienes ideas o mejoras, no dudes en crear un pull request o abrir un issue en el repositorio.
 
-### `npm run eject`
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contacto
+Para cualquier duda o consulta, puedes contactar con nosotros en:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Teléfono: +57 123 456 7890
+Email: info@domiciliosexpress.com
+Dirección: Manzana H Casa 17, Barrio Vasconia Reservado, Ibagué, Tolima
