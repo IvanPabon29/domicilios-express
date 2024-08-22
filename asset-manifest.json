@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/domicilios-express/static/css/main.3bd4242a.css",
-    "main.js": "/domicilios-express/static/js/main.1395be3e.js",
+    "main.css": "/domicilios-express/static/css/main.7048894f.css",
+    "main.js": "/domicilios-express/static/js/main.6c4f26d7.js",
     "static/media/equipo.jpg": "/domicilios-express/static/media/equipo.dee20faef3f87a83b619.jpg",
     "static/media/img-contacto.jpg": "/domicilios-express/static/media/img-contacto.68eeae89e368a62f8877.jpg",
     "static/media/fondo-inicio.jpg": "/domicilios-express/static/media/fondo-inicio.42548b3e75f3e1443070.jpg",
@@ -15,11 +15,11 @@
     "static/media/whatsapp.png": "/domicilios-express/static/media/whatsapp.d026940870fb334920b7.png",
     "static/media/facebook.png": "/domicilios-express/static/media/facebook.49e67d43221b6bb1aa86.png",
     "index.html": "/domicilios-express/index.html",
-    "main.3bd4242a.css.map": "/domicilios-express/static/css/main.3bd4242a.css.map",
-    "main.1395be3e.js.map": "/domicilios-express/static/js/main.1395be3e.js.map"
+    "main.7048894f.css.map": "/domicilios-express/static/css/main.7048894f.css.map",
+    "main.6c4f26d7.js.map": "/domicilios-express/static/js/main.6c4f26d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bd4242a.css",
-    "static/js/main.1395be3e.js"
+    "static/css/main.7048894f.css",
+    "static/js/main.6c4f26d7.js"
   ]
 }
