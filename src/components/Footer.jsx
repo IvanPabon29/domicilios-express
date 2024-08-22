@@ -2,6 +2,7 @@ import './Footer.css';
 import facebook from "../img/facebook.png";
 import whatsapp from "../img/whatsapp.png";
 import instagram from "../img/instagram.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,9 +18,9 @@ const Footer = () => {
           <div className="col-md-4">
             <h4>Enlaces Rápidos</h4>
             <ul className='enlaces'>
-              <li><a href="/servicios">Servicios</a></li>
-              <li><a href="/domicilios">Domicilios</a></li>
-              <li><a href="/contacto">Contacto</a></li>
+              <li><Link to="/servicios">Servicios</Link></li>
+              <li><Link to="/domicilios">Domicilios</Link></li>
+              <li><Link to="/contacto">Contacto</Link></li>
             </ul>
           </div>
           <div className="col-md-4">
