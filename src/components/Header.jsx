@@ -1,27 +1,39 @@
+import React, { useState } from "react";
 import "./Header.css";
-import logo from "../img/logo.png"
-import { Link, NavLink } from 'react-router-dom';
+import logo from "../img/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
 
-  return(
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
     <header>
       <Link to="/" className="div-logo">
         <img src={logo} alt="logo" title="Logo-Domicilio" />
         <h3>Domicilios Express</h3>
       </Link>
 
-      <nav>
-        <ul className="nav-menu">
-          <li><NavLink to="/" exact>Inicio</NavLink></li>
-          <li><NavLink to="/servicios" >Servicios</NavLink></li>
-          <li><NavLink to="/domicilios" >Domicilios</NavLink></li>
-          <li><NavLink to="/nosotros" >Nosotros</NavLink></li>
-          <li><NavLink to="/contacto" >Contacto</NavLink></li>
+      <nav className={`nav-menu ${isOpen ? "open" : ""}`}>
+        <ul>
+          <li><NavLink to="/" exact onClick={toggleMenu}>Inicio</NavLink></li>
+          <li><NavLink to="/servicios" onClick={toggleMenu}>Servicios</NavLink></li>
+          <li><NavLink to="/domicilios" onClick={toggleMenu}>Domicilios</NavLink></li>
+          <li><NavLink to="/nosotros" onClick={toggleMenu}>Nosotros</NavLink></li>
+          <li><NavLink to="/contacto" onClick={toggleMenu}>Contacto</NavLink></li>
         </ul>
       </nav>
+
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        <div className={`bar ${isOpen ? "open" : ""}`}></div>
+      </div>
     </header>
   );
-};
+}
 
 export default Header;

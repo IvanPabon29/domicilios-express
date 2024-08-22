@@ -1,49 +1,105 @@
 /* Encabezado */
-header{
+header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
 }
 
 /* Contenedor logo */
-.div-logo{
+.div-logo {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  width: 25%;
-  /* padding: 0 1rem;  */
   cursor: pointer;
   text-decoration: none;
   color: black;
-  img{
-    width: 60px;
-  }
 }
-.div-logo:hover{
+
+.div-logo img {
+  width: 60px;
+}
+
+.div-logo:hover {
   color: #ff5733;
   text-decoration: underline;
 }
-
 
 /* Navegacion */
-nav{
-  width: 75%;
-}
-.nav-menu{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.nav-menu ul {
   list-style: none;
-  margin: 1rem;
-  padding: 1rem;
-  a{
-    text-decoration: none;
-    color: black;
-  }
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
-.nav-menu a:hover{
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu a:hover {
   color: #ff5733;
   text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    z-index: 5; /* Para colocarlo por encima del INICIO*/
+    top: 65px;
+    right: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
