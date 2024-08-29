@@ -5,8 +5,7 @@
 **Domicilios Express** es una sitio web diseñada para facilitar la gestión de entregas rápidas en la ciudad de Ibagué, Tolima. La aplicación permite a los clientes solicitar la recogida y entrega de paquetes o pedidos de manera eficiente y segura. Nuestro enfoque es proporcionar un servicio confiable, utilizando vehículos, motocicletas, y bicicletas para satisfacer las necesidades de nuestros usuarios.
 
 ## Interfaz
-![alt text](<Captura de pantalla 2024-08-19 141640.png>)
-
+![alt text](src/img/screenshots/home.png)
 ## Funcionalidades
 
 - **Inicio**: Página de bienvenida con información general sobre los servicios ofrecidos.
